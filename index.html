@@ -53,160 +53,456 @@
     <script>
         // The correct answer is at index 0 in the source. JavaScript shuffles them randomly at runtime!
         const questions = [
-            // 1-25: Planning Nature & Importance
-            { q: "Which is the primary and first function of management?", options: ["Planning", "Organizing", "Staffing", "Controlling"], a: 0, e: "Planning precedes all other managerial functions like organizing, staffing, directing, and controlling." },
-            { q: "Planning bridges the gap between:", options: ["Where we are and where we want to go", "Workers and Management", "Customers and Suppliers", "Production and Sales"], a: 0, e: "Planning lays out the roadmap to reach a desired future destination from the present position." },
-            { q: "Which of the following best defines 'Planning'?", options: ["Deciding in advance what to do, how to do it, when to do it, and who is to do it", "Arranging physical resources", "Measuring actual performance", "Hiring employees"], a: 0, e: "Planning is an intellectual process of thinking before doing." },
-            { q: "Planning is considered a 'Forward-looking' function because:", options: ["It involves forecasting and anticipating the future", "It analyzes past mistakes only", "It focuses strictly on present daily tasks", "It ignores future uncertainties"], a: 0, e: "Planning is always futuristic, aimed at preparing the organization for tomorrow." },
-            { q: "Why is planning considered a 'Pervasive' function?", options: ["It is required at all levels of management in all departments", "It is only required by Top Management", "It is only required in manufacturing", "It is done only once"], a: 0, e: "Every manager, whether top, middle, or lower level, must plan their respective activities." },
-            { q: "Which of the following is NOT a feature of Planning?", options: ["It guarantees 100% success", "It focuses on achieving objectives", "It is a continuous process", "It involves decision making"], a: 0, e: "Planning reduces risks and uncertainties, but it cannot absolutely guarantee success." },
-            { q: "How does planning reduce the risk of uncertainty?", options: ["By anticipating future changes and preparing responses in advance", "By eliminating all future risks", "By firing inefficient workers", "By hiding information from competitors"], a: 0, e: "Forecasting helps managers foresee problems and keep backup plans ready." },
-            { q: "Planning is an 'Intellectual Process' because:", options: ["It requires mental exercise, imagination, foresight, and sound judgment", "It requires physical labor", "It relies entirely on machines", "It requires no thinking"], a: 0, e: "Planning is a thinking function rather than a doing function." },
-            { q: "Why is planning called the 'Primacy of Management'?", options: ["Because all other managerial functions are performed within the framework of plans drawn", "Because it is the hardest function", "Because it requires the most money", "Because only the CEO does it"], a: 0, e: "Primacy means 'first'. You cannot organize, staff, or control without a plan." },
-            { q: "Which of the following is a major limitation of Planning?", options: ["It is time-consuming and expensive", "It provides direction", "It establishes standards for controlling", "It encourages innovation"], a: 0, e: "Gathering data, forecasting, and formulating plans requires significant time and financial resources." },
-            { q: "Does planning work perfectly in a highly dynamic, rapidly changing environment?", options: ["No, rigid plans may fail if the external environment changes suddenly", "Yes, plans are immune to the environment", "Yes, planning stops the environment from changing", "No, because planning is only for the past"], a: 0, e: "A major limitation of planning is that sudden political, economic, or technological changes can render plans useless." },
-            { q: "Planning reduces overlapping and wasteful activities by:", options: ["Coordinating the efforts of different departments towards a common goal", "Making employees work overtime", "Firing extra staff", "Ignoring minor departments"], a: 0, e: "Clear plans clarify who is doing what, preventing two people from doing the same task." },
-            { q: "How does planning facilitate 'Controlling'?", options: ["It provides the standard targets against which actual performance is measured", "It physically stops workers from making mistakes", "It hires supervisors", "It creates the product"], a: 0, e: "If you don't plan to produce 100 units, you cannot 'control' the process when only 80 are produced." },
-            { q: "Which characteristic of planning means that plans need to be revised and updated continuously?", options: ["Continuous Process", "Primary Function", "Goal-oriented", "Pervasive"], a: 0, e: "A plan is drawn for a specific period. After that, a new plan must be drawn based on new conditions." },
-            { q: "At the Supervisory/Lower level, planning is mostly:", options: ["Operational and short-term (day-to-day)", "Strategic and long-term (5-10 years)", "Tactical (1-2 years)", "Unnecessary"], a: 0, e: "Supervisors plan daily shifts, raw material usage, and worker assignments." },
-            { q: "Strategic planning is the primary responsibility of:", options: ["Top Management", "Middle Management", "Lower Management", "Workers"], a: 0, e: "Top executives set the long-term vision, mission, and overall strategies of the firm." },
-            { q: "Tactical planning is usually carried out by:", options: ["Middle Management", "Top Management", "Foremen", "Supervisors"], a: 0, e: "Middle managers create departmental plans to support the top management's strategic plans." },
-            { q: "Planning involves 'Decision Making' because:", options: ["It involves selecting the best alternative course of action from various available options", "It creates physical products", "It fires employees", "It requires no choices"], a: 0, e: "If there is only one way to do a job, there is no need for planning. Planning implies making a choice." },
-            { q: "Which of the following is an internal limitation of planning?", options: ["Rigidity", "Changes in government policies", "Natural calamities", "Technological changes in the market"], a: 0, e: "Rigidity is internal; once a plan is set, managers may blindly follow it even when situations change." },
-            { q: "Which of the following is an external limitation of planning?", options: ["Unexpected changes in government tax policies", "Lack of time by managers", "High cost of data collection", "False assumptions by planners"], a: 0, e: "External limitations are forces outside the organization's control." },
-            { q: "What does 'Flexibility' in planning mean?", options: ["The ability to alter or modify plans if the situation demands it", "Refusing to change the plan", "Making the plan as long as possible", "Forcing workers to adapt to the plan"], a: 0, e: "Good plans have room for adjustments to cope with unforeseen circumstances." },
-            { q: "Which of the following is NOT an advantage of planning?", options: ["It restricts creativity and initiative of lower-level staff", "It provides direction", "It reduces the risk of uncertainty", "It facilitates decision making"], a: 0, e: "Restricting creativity is a limitation/disadvantage of rigid planning." },
-            { q: "Without planning, the activities of an organization would become:", options: ["Random, uncoordinated, and chaotic", "Highly efficient", "Extremely profitable", "Automatic"], a: 0, e: "Planning brings order and purpose; without it, efforts are wasted." },
-            { q: "Planning promotes innovative ideas because:", options: ["It forces managers to think creatively about future challenges and opportunities", "It stops all work", "It relies on old manuals", "It fires non-creative staff"], a: 0, e: "Since planning is an intellectual process, it stimulates the mind to find better ways of doing things." },
-            { q: "Which of the following statements is true?", options: ["Planning is looking ahead, controlling is looking back", "Planning is looking back, controlling is looking ahead", "Planning and controlling are the exact same thing", "Planning only deals with the past"], a: 0, e: "Planning anticipates the future, while controlling evaluates past execution." },
+  // 2.1 Creativity and Innovation Management
 
-            // 26-45: Steps in the Planning Process
-            { q: "What is the first step in the formal Planning Process?", options: ["Being aware of opportunities / Setting Objectives", "Evaluating alternatives", "Selecting an alternative", "Implementing the plan"], a: 0, e: "Before doing anything, management must identify an opportunity and set a clear objective to achieve." },
-            { q: "Objectives should ideally be 'SMART'. What does 'SMART' stand for?", options: ["Specific, Measurable, Achievable, Relevant, Time-bound", "Simple, Meaningful, Accurate, Rapid, Tested", "Specific, Maximum, Accurate, Reliable, Technical", "Standard, Measured, Applicable, Rated, Timely"], a: 0, e: "Objectives must be clear, quantifiable, realistic, and have a deadline." },
-            { q: "What is the second step in the Planning Process, immediately after setting objectives?", options: ["Developing Planning Premises", "Implementing the plan", "Follow-up action", "Evaluating alternatives"], a: 0, e: "Premises are assumptions about the future environment in which the plan will be executed." },
-            { q: "What are 'Planning Premises'?", options: ["Assumptions or forecasts about future conditions and events that will affect the plan", "The physical building where planning takes place", "The budget allocated for planning", "The final selected alternative"], a: 0, e: "Since the future is uncertain, plans are built upon certain assumed conditions (e.g., assuming tax rates won't change)." },
-            { q: "Which of the following is an example of an 'External Premise'?", options: ["Forecasted inflation rate and political stability", "Company's financial capacity", "Skill level of current employees", "Company's production capacity"], a: 0, e: "External premises deal with the outside environment (economy, politics, technology)." },
-            { q: "Which of the following is an example of an 'Internal Premise'?", options: ["Availability of capital and machinery within the firm", "Changes in labor laws", "Competitor's pricing strategy", "Global market trends"], a: 0, e: "Internal premises are factors within the organization's control." },
-            { q: "After developing planning premises, what is the next step?", options: ["Identifying alternative courses of action", "Selecting the best plan", "Implementing the plan", "Measuring performance"], a: 0, e: "Managers must brainstorm all possible ways to achieve the set objectives." },
-            { q: "Why is it important to identify 'Alternative Courses of Action'?", options: ["Because there is usually more than one way to achieve an objective, and the obvious way might not be the best", "To confuse the competitors", "To spend more time planning", "To delay the execution"], a: 0, e: "Brainstorming alternatives ensures that all potential strategies are considered before committing." },
-            { q: "After identifying alternatives, what does a manager do next?", options: ["Evaluate the alternatives based on pros and cons", "Select the first alternative immediately", "Implement all alternatives at once", "Stop the planning process"], a: 0, e: "Each alternative must be weighed against criteria like cost, risk, time, and expected return." },
-            { q: "What is the 'Point of Decision' in the planning process?", options: ["Selecting the best alternative", "Setting the objectives", "Implementing the plan", "Developing premises"], a: 0, e: "Selection is the actual decision-making point where the best plan is adopted." },
-            { q: "After selecting the main plan, managers must formulate 'Derivative Plans'. What are they?", options: ["Sub-plans or secondary plans that support the main plan (e.g., a hiring plan to support an expansion plan)", "Plans to replace the manager", "Plans made by competitors", "Failed plans"], a: 0, e: "Derivative plans break the main plan down into actionable departmental plans." },
-            { q: "What is the final step in the planning process?", options: ["Follow-up / Reviewing the plan", "Identifying alternatives", "Setting objectives", "Developing premises"], a: 0, e: "Managers must monitor the plan while it is implemented to ensure it is working and make adjustments if necessary." },
-            { q: "Why is 'Follow-up' crucial in planning?", options: ["To see if the plans are being implemented properly and if premises hold true", "To punish employees", "To write a new rulebook", "To stop the production process"], a: 0, e: "The environment is dynamic; continuous review ensures the plan remains relevant." },
-            { q: "If an organization sets a goal to increase sales by 20%, what step of planning is this?", options: ["Setting Objectives", "Developing Premises", "Evaluating Alternatives", "Follow-up"], a: 0, e: "This is the formulation of a clear, measurable target." },
-            { q: "If a manager assumes that raw material prices will remain stable for the next 6 months, this is an example of:", options: ["Developing a planning premise", "Setting an objective", "Selecting an alternative", "Follow-up action"], a: 0, e: "Assumptions about the future are planning premises." },
-            { q: "Comparing Option A (buying new machinery) with Option B (leasing machinery) is which step of planning?", options: ["Evaluating alternative courses of action", "Setting objectives", "Formulating derivative plans", "Follow-up"], a: 0, e: "Weighing the financial and operational pros/cons is evaluation." },
-            { q: "Translating the selected plan into action (doing what was planned) is called:", options: ["Implementing the plan", "Evaluating alternatives", "Setting objectives", "Identifying alternatives"], a: 0, e: "Implementation is putting the plan to work by organizing resources and directing staff." },
-            { q: "Which step of planning requires the highest level of analytical and mathematical skills?", options: ["Evaluating alternative courses of action", "Implementing the plan", "Follow-up", "Communicating the plan"], a: 0, e: "Evaluation requires heavy forecasting, cost-benefit analysis, and risk assessment." },
-            { q: "Which of the following makes planning a 'continuous' process?", options: ["The Follow-up step, which leads to revising plans or setting new objectives", "Setting the initial objective", "Selecting an alternative", "Developing premises"], a: 0, e: "Reviewing the plan often reveals the need for a new plan, creating a continuous loop." },
-            { q: "A 'Contingency Plan' or 'Plan B' is primarily created during which phase?", options: ["Evaluating and selecting alternatives (preparing for premises failing)", "Implementing the plan", "Follow-up", "Setting objectives"], a: 0, e: "Good planners select a main plan but keep a viable alternative ready in case the primary assumptions fail." },
+  {
+    q: "Creativity and innovation management involves which of the following?",
+    options: [
+      "Only managing financial resources",
+      "Systematically fostering, developing, and implementing new ideas within an organization",
+      "Controlling employee behavior strictly",
+      "Reducing product variety"
+    ],
+    a: 1,
+    e: "Creativity and innovation management involves systematically fostering, developing, and implementing new ideas within an organization or personal projects."
+  },
+  {
+    q: "Which creativity technique involves a group generating as many ideas as possible without criticism?",
+    options: [
+      "Checklist Method",
+      "Reverse Brainstorming",
+      "Brainstorming",
+      "Morphological Analysis"
+    ],
+    a: 2,
+    e: "Brainstorming is a group technique where participants generate as many ideas as possible without criticism. It encourages free thinking and diverse perspectives."
+  },
+  {
+    q: "Which of the following is NOT a variant of brainstorming?",
+    options: [
+      "Classical brainstorming",
+      "Brain writing (silent idea generation)",
+      "Electronic brainstorming",
+      "Morphological brainstorming"
+    ],
+    a: 3,
+    e: "Variants of brainstorming include classical brainstorming, brain writing (silent idea generation), and electronic brainstorming. Morphological brainstorming is not a listed variant."
+  },
+  {
+    q: "What does SCAMPER stand for in the Checklist Method?",
+    options: [
+      "Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse",
+      "Sort, Create, Analyze, Modify, Plan, Execute, Review",
+      "Select, Calculate, Assess, Measure, Prioritize, Evaluate, Redesign",
+      "Study, Compare, Apply, Modify, Process, Eliminate, Repeat"
+    ],
+    a: 0,
+    e: "SCAMPER stands for Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse — a checklist technique used in the Checklist Method."
+  },
+  {
+    q: "The Checklist Method in creativity helps primarily in:",
+    options: [
+      "Generating completely new ideas from scratch only",
+      "Refining or innovating existing products and processes",
+      "Eliminating all existing products",
+      "Creating financial plans"
+    ],
+    a: 1,
+    e: "The Checklist Method uses a structured list of questions or prompts to explore new ideas and helps in refining or innovating existing products and processes."
+  },
+  {
+    q: "In Reverse Brainstorming, participants first identify:",
+    options: [
+      "The best solutions to the problem",
+      "Ways to worsen the problem",
+      "Financial implications of the problem",
+      "Historical causes of the problem"
+    ],
+    a: 1,
+    e: "In Reverse Brainstorming, instead of generating solutions, participants first identify ways to worsen the problem, then reverse them into potential solutions."
+  },
+  {
+    q: "Reverse Brainstorming encourages which type of thinking?",
+    options: [
+      "Conventional and traditional thinking",
+      "Purely financial thinking",
+      "Unconventional thinking revealing hidden aspects of the issue",
+      "Statistical thinking"
+    ],
+    a: 2,
+    e: "Reverse Brainstorming encourages unconventional thinking and reveals hidden aspects of the issue."
+  },
+  {
+    q: "Morphological Analysis breaks down a problem into:",
+    options: [
+      "Financial components",
+      "Key parameters and systematically explores all possible combinations",
+      "Team roles and responsibilities",
+      "Customer feedback categories"
+    ],
+    a: 1,
+    e: "Morphological Analysis breaks down a problem into key parameters and systematically explores all possible combinations."
+  },
+  {
+    q: "If designing a new smartphone, considering size, battery life, materials, and interface separately and recombining them is an example of:",
+    options: [
+      "Brainstorming",
+      "Checklist Method",
+      "Reverse Brainstorming",
+      "Morphological Analysis"
+    ],
+    a: 3,
+    e: "Morphological Analysis: If designing a new smartphone, factors like size, battery life, materials, and interface are considered separately and recombined in novel ways."
+  },
+  {
+    q: "Morphological Analysis is most useful for:",
+    options: [
+      "Simple problems with one correct solution",
+      "Financial budgeting",
+      "Complex problem-solving and product design",
+      "Team conflict resolution"
+    ],
+    a: 2,
+    e: "Morphological Analysis is useful for complex problem-solving and product design."
+  },
+  {
+    q: "The Six Thinking Hats technique was developed by:",
+    options: [
+      "F.W. Taylor",
+      "Henri Fayol",
+      "Edward de Bono",
+      "Peter Drucker"
+    ],
+    a: 2,
+    e: "The Six Thinking Hats technique was developed by Edward de Bono as a structured thinking process."
+  },
+  {
+    q: "In Six Thinking Hats, which hat focuses on facts and data?",
+    options: [
+      "Red Hat",
+      "Black Hat",
+      "White Hat",
+      "Yellow Hat"
+    ],
+    a: 2,
+    e: "White Hat: Focuses on facts and data."
+  },
+  {
+    q: "In Six Thinking Hats, which hat considers emotions and intuitions?",
+    options: [
+      "White Hat",
+      "Red Hat",
+      "Black Hat",
+      "Green Hat"
+    ],
+    a: 1,
+    e: "Red Hat: Considers emotions and intuitions."
+  },
+  {
+    q: "In Six Thinking Hats, which hat identifies risks and drawbacks?",
+    options: [
+      "Yellow Hat",
+      "Green Hat",
+      "Blue Hat",
+      "Black Hat"
+    ],
+    a: 3,
+    e: "Black Hat: Identifies risks and drawbacks."
+  },
+  {
+    q: "In Six Thinking Hats, which hat highlights benefits and positives?",
+    options: [
+      "Red Hat",
+      "Black Hat",
+      "Yellow Hat",
+      "Blue Hat"
+    ],
+    a: 2,
+    e: "Yellow Hat: Highlights benefits and positives."
+  },
+  {
+    q: "In Six Thinking Hats, which hat encourages creativity and alternative ideas?",
+    options: [
+      "Green Hat",
+      "White Hat",
+      "Red Hat",
+      "Black Hat"
+    ],
+    a: 0,
+    e: "Green Hat: Encourages creativity and alternative ideas."
+  },
+  {
+    q: "In Six Thinking Hats, which hat manages the thinking process and ensures focus?",
+    options: [
+      "Yellow Hat",
+      "Green Hat",
+      "White Hat",
+      "Blue Hat"
+    ],
+    a: 3,
+    e: "Blue Hat: Manages the thinking process and ensures focus."
+  },
+  {
+    q: "The Six Thinking Hats technique helps in:",
+    options: [
+      "Making one-sided decisions quickly",
+      "Making well-rounded decisions and reducing conflicts",
+      "Eliminating employee participation",
+      "Creating financial reports"
+    ],
+    a: 1,
+    e: "Six Thinking Hats helps in making well-rounded decisions and reducing conflicts. Each technique can be used alone or in combination to drive creativity and innovation."
+  },
+  {
+    q: "Which creativity technique is best suited for problems that can be broken down into independent parameters?",
+    options: [
+      "Brainstorming",
+      "Checklist Method",
+      "Reverse Brainstorming",
+      "Morphological Analysis"
+    ],
+    a: 3,
+    e: "Morphological Analysis is best suited for problems that can be broken down into independent parameters and systematically explored."
+  },
+  {
+    q: "Which is NOT a rule of traditional brainstorming?",
+    options: [
+      "Encourage wild ideas",
+      "Defer judgment",
+      "Critique ideas immediately",
+      "Aim for quantity over quality"
+    ],
+    a: 2,
+    e: "Critique ideas immediately is NOT a rule of brainstorming. Brainstorming encourages free thinking without criticism or judgment."
+  },
 
-            // 46-75: Types of Plans (Policies, Procedures, Rules, Budgets)
-            { q: "Plans can be broadly classified into two categories based on their usage. What are they?", options: ["Standing Plans and Single-Use Plans", "Top Plans and Bottom Plans", "Internal Plans and External Plans", "Good Plans and Bad Plans"], a: 0, e: "Standing plans are used repeatedly, while single-use plans are for one-time events." },
-            { q: "What is a 'Standing Plan'?", options: ["A plan developed for activities that occur regularly over a period of time", "A plan used only once for a specific project", "A plan made while standing up", "A budget for a single event"], a: 0, e: "Standing plans include policies, procedures, and rules that guide daily routine operations." },
-            { q: "What is a 'Single-Use Plan'?", options: ["A plan developed to achieve a specific, one-time objective and discarded after use", "A plan used every day", "A strict rule", "A company policy"], a: 0, e: "Examples include budgets and specific project programs." },
-            { q: "An objective is:", options: ["The desired future state or end result that an organization strives to achieve", "A strict rule", "A step-by-step process", "A financial statement"], a: 0, e: "Objectives are the destination, while other plans are the routes to get there." },
-            { q: "Which of the following is a Standing Plan?", options: ["Policy", "Budget", "Program", "Project"], a: 0, e: "Policies guide recurring decisions (e.g., a 'No Return' policy is used repeatedly)." },
-            { q: "Which of the following is a Single-Use Plan?", options: ["Budget", "Rule", "Procedure", "Policy"], a: 0, e: "A budget is prepared for a specific period (e.g., Annual Budget 2024) and is not reused for 2025." },
-            { q: "What is a 'Policy'?", options: ["A general guideline that channels the thinking and decision-making of managers", "A specific mathematical target", "A rigid step-by-step instruction", "A numerical budget"], a: 0, e: "Policies define the boundaries within which decisions must be made (e.g., 'We only hire local graduates')." },
-            { q: "What is a 'Procedure'?", options: ["A chronological sequence of steps to be followed to perform a specific task", "A general guideline", "A financial forecast", "The end goal"], a: 0, e: "Procedures detail the exact 'how-to' (e.g., the step-by-step procedure to apply for leave)." },
-            { q: "How does a 'Rule' differ from a 'Policy'?", options: ["A rule is a rigid, specific statement dictating what must or must not be done, allowing no discretion", "A rule is flexible, a policy is rigid", "A rule is a financial number, a policy is text", "There is no difference"], a: 0, e: "A policy gives a manager freedom to decide within limits; a rule ('No Smoking') allows zero freedom." },
-            { q: "Which type of plan is 'No Smoking in the Factory'?", options: ["Rule", "Policy", "Procedure", "Objective"], a: 0, e: "It is a rigid statement of required behavior with penalties for non-compliance." },
-            { q: "Which type of plan is 'We sell goods strictly on a cash basis'?", options: ["Policy", "Procedure", "Rule", "Budget"], a: 0, e: "It guides the sales manager's decisions regarding credit." },
-            { q: "What is a 'Method' in planning?", options: ["The prescribed, formalized way to perform one specific step of a procedure", "A broad company goal", "A penalty for breaking a rule", "A financial estimation"], a: 0, e: "If a procedure has 5 steps, a method details exactly how to do Step 3 most efficiently." },
-            { q: "What is a 'Budget'?", options: ["A statement of expected results expressed in numerical/financial terms for a definite period", "A general statement of intent", "A chronological sequence of tasks", "A strict code of conduct"], a: 0, e: "Budgets quantify plans into numbers (rupees, hours, units)." },
-            { q: "Because a budget provides a numeric standard against which actual outcomes are measured, it acts as both a planning tool and a:", options: ["Controlling tool", "Staffing tool", "Organizing tool", "Directing tool"], a: 0, e: "Budgets are the primary device for financial control." },
-            { q: "What is a 'Program' in planning?", options: ["A comprehensive, single-use plan combining objectives, policies, procedures, and budgets for a specific major undertaking", "A daily rule", "A single step in a procedure", "A general guideline"], a: 0, e: "E.g., A program to construct a new shopping mall." },
-            { q: "Which of the following plans allows the LEAST amount of flexibility or managerial discretion?", options: ["Rule", "Policy", "Strategy", "Objective"], a: 0, e: "Rules are absolute directives. Policies provide a range of freedom." },
-            { q: "Which of the following is considered a 'Strategy'?", options: ["A comprehensive plan formulated to counter competitor actions and achieve long-term goals in a dynamic environment", "A daily attendance log", "A step-by-step manufacturing process", "A strict 'no mobile phones' rule"], a: 0, e: "Strategy usually involves the organization's interaction with its external competitive environment." },
-            { q: "The step-by-step process of recruiting a new employee is an example of a:", options: ["Procedure", "Policy", "Rule", "Budget"], a: 0, e: "It is a chronological sequence (1. Post ad, 2. Review CVs, 3. Interview, 4. Hire)." },
-            { q: "A target to 'Increase market share by 15% by 2025' is an example of an:", options: ["Objective", "Procedure", "Rule", "Method"], a: 0, e: "It is a specific, measurable end-result." },
-            { q: "Who is responsible for formulating 'Strategies' and 'Objectives'?", options: ["Top Management", "Lower Management", "Foremen", "Supervisors"], a: 0, e: "Broad strategies and corporate objectives are top-level responsibilities." },
-            { q: "Who is primarily responsible for implementing 'Methods' and enforcing 'Rules' on the shop floor?", options: ["Supervisory / Lower Management", "Board of Directors", "Shareholders", "CEO"], a: 0, e: "First-line managers ensure the actual daily work methods and rules are followed." },
-            { q: "Which type of plan ensures uniformity of action and standardizes routine activities across the organization?", options: ["Standing Plans (Procedures, Rules)", "Single-use Plans", "Budgets", "Strategic Plans"], a: 0, e: "Standing plans prevent employees from reinventing the wheel every time a routine issue arises." },
-            { q: "A 'Sales Budget' for the upcoming quarter is a:", options: ["Single-use plan", "Standing plan", "Rule", "Policy"], a: 0, e: "It is used once for that specific quarter and then replaced by a new budget." },
-            { q: "Which of the following statements about 'Policies' is correct?", options: ["They guide decision-making", "They define exact steps to do a job", "They are strictly numeric", "They are meant to be broken"], a: 0, e: "Policies channel the intellect of the manager toward the goal." },
-            { q: "The sequence of plans from broadest to most specific is:", options: ["Objective -> Policy -> Procedure -> Rule", "Rule -> Procedure -> Policy -> Objective", "Procedure -> Rule -> Objective -> Policy", "Policy -> Objective -> Rule -> Procedure"], a: 0, e: "Objectives are broad goals; policies guide decisions to reach them; procedures are steps to act; rules are specific limits on those actions." },
+  // 2.2 New Product Development & Change Management
 
-            // 76-95: Organizing Nature, Importance & Process
-            { q: "What is 'Organizing' in the context of management?", options: ["The process of identifying tasks, grouping them into departments, and establishing authority-responsibility relationships", "The process of predicting the future", "The process of hiring people", "The process of checking physical output"], a: 0, e: "Organizing builds the framework or structure of the enterprise." },
-            { q: "Which management function follows Planning?", options: ["Organizing", "Controlling", "Directing", "Staffing"], a: 0, e: "Once the plan is made, resources must be organized to execute it." },
-            { q: "What is the first step in the process of Organizing?", options: ["Identification and Division of Work", "Departmentalization", "Assignment of Duties", "Establishing Reporting Relationships"], a: 0, e: "The total work to be done must first be identified and broken down into smaller, manageable tasks." },
-            { q: "What is 'Departmentation' (or Departmentalization)?", options: ["Grouping related and similar tasks together into specific units or departments", "Firing employees in groups", "Merging with another company", "Writing the company budget"], a: 0, e: "After dividing work, similar tasks (like all sales tasks) are grouped into a Sales Department." },
-            { q: "After grouping activities into departments, what is the next step in organizing?", options: ["Assignment of duties to individuals based on their skills", "Evaluating alternatives", "Setting objectives", "Controlling performance"], a: 0, e: "Once departments exist, specific jobs are assigned to specific employees." },
-            { q: "What is the final step in the Organizing process?", options: ["Establishing reporting relationships (Authority-Responsibility)", "Division of work", "Departmentalization", "Recruitment"], a: 0, e: "Everyone must know who they report to and who reports to them, creating the management hierarchy." },
-            { q: "Which principle of organizing states that work should be broken down into small tasks to promote expertise?", options: ["Principle of Specialization / Division of Labor", "Principle of Unity of Command", "Principle of Scalar Chain", "Principle of Equity"], a: 0, e: "Doing the same small task repeatedly makes an employee an expert." },
-            { q: "Organizing leads to the optimum utilization of resources because:", options: ["It clearly defines jobs and prevents duplication or overlapping of work", "It forces people to work 24/7", "It eliminates the need for managers", "It uses only cheap materials"], a: 0, e: "Clear job descriptions ensure no two people waste time doing the same task." },
-            { q: "What is a 'Formal Organization'?", options: ["An intentionally designed structure of roles, authority, and responsibility created by management", "A group of friends at work", "A network of social relationships", "An illegal gathering"], a: 0, e: "The formal organization is the official structure shown on the company's organization chart." },
-            { q: "What is an 'Informal Organization'?", options: ["A network of personal and social relations arising spontaneously as people associate with one another", "The official company hierarchy", "The Board of Directors", "A registered trade union"], a: 0, e: "Informal organizations form naturally based on friendships, common interests, and gossip." },
-            { q: "Which organization structure is bound by rigid rules, procedures, and a scalar chain of command?", options: ["Formal Organization", "Informal Organization", "Social Organization", "Grapevine"], a: 0, e: "Formal organizations prioritize official rules and official communication channels." },
-            { q: "Which type of organization relies on the 'Grapevine' for communication?", options: ["Informal Organization", "Formal Organization", "Military Organization", "Government Organization"], a: 0, e: "The grapevine is the unofficial, rapid, and often rumor-based communication network of an informal organization." },
-            { q: "Can management completely eliminate the Informal Organization?", options: ["No, it arises naturally from human social interactions and cannot be destroyed", "Yes, by passing strict rules", "Yes, by firing everyone", "Yes, by installing cameras"], a: 0, e: "As long as humans work together, informal social networks will exist." },
-            { q: "What is an 'Organization Chart'?", options: ["A visual diagram showing the internal structure, departments, and reporting relationships of a company", "A chart showing daily stock prices", "A graph of employee attendance", "A map of the physical factory building"], a: 0, e: "The chart visually maps out 'who reports to whom'." },
-            { q: "What does 'Authority' mean in organizing?", options: ["The official right to make decisions, issue orders, and allocate resources", "The physical strength of a manager", "The obligation to complete a task", "The fear of punishment"], a: 0, e: "Authority is the power granted by the formal organization to a managerial position." },
-            { q: "What does 'Responsibility' mean?", options: ["The obligation of a subordinate to properly perform the assigned duty", "The right to give orders", "The right to punish", "The ability to ignore rules"], a: 0, e: "When a task is assigned, the subordinate accepts the responsibility to complete it." },
-            { q: "What is 'Accountability'?", options: ["The state of being answerable for the final outcome of the assigned task", "The process of assigning tasks", "The power to make decisions", "The act of paying wages"], a: 0, e: "Accountability means you must answer to your superior for success or failure." },
-            { q: "Can 'Accountability' be delegated?", options: ["No, it is absolute and cannot be passed to someone else", "Yes, easily", "Yes, but only to the CEO", "Yes, to machines"], a: 0, e: "A manager can delegate authority and responsibility to a worker, but the manager remains absolutely accountable to the CEO for the worker's failure." },
-            { q: "The 'Principle of Parity of Authority and Responsibility' states that:", options: ["Authority and responsibility must be exactly equal", "Authority should be greater than responsibility", "Responsibility should be greater than authority", "Neither is required"], a: 0, e: "If you give someone the responsibility to do a job, you must give them the equal authority required to get it done." },
-            { q: "What happens if a manager is given Responsibility without Authority?", options: ["They will be unable to complete the task because they lack the power to command resources", "They will become a dictator", "They will work faster", "They will get promoted"], a: 0, e: "They will fail because they can't order anyone to help them or authorize spending." },
+  {
+    q: "What is the first stage in the New Product Development (NPD) process?",
+    options: [
+      "Market Testing",
+      "Business Analysis",
+      "Idea Generation",
+      "Commercialization"
+    ],
+    a: 2,
+    e: "Idea Generation is the first stage in NPD where new ideas are born through brainstorming sessions, customer feedback, competitor analysis, and R&D."
+  },
+  {
+    q: "In NPD, which stage evaluates ideas for feasibility, profitability, and alignment with business goals?",
+    options: [
+      "Idea Generation",
+      "Idea Screening",
+      "Market Testing",
+      "Commercialization"
+    ],
+    a: 1,
+    e: "Idea Screening: Here, ideas are evaluated for their feasibility (can we do it?), profitability (will it make money?), and alignment with business goals."
+  },
+  {
+    q: "In which NPD stage are product concepts tested with potential customers?",
+    options: [
+      "Idea Screening",
+      "Business Analysis",
+      "Concept Development & Testing",
+      "Product Development & Prototyping"
+    ],
+    a: 2,
+    e: "Concept Development & Testing: Product concepts are developed and tested with potential customers to see if they resonate."
+  },
+  {
+    q: "Which NPD stage involves estimating costs, potential revenue, pricing, and market size?",
+    options: [
+      "Idea Screening",
+      "Business Analysis",
+      "Market Testing",
+      "Commercialization"
+    ],
+    a: 1,
+    e: "Business Analysis: This involves estimating costs, potential revenue, pricing, and market size."
+  },
+  {
+    q: "In which NPD stage is a prototype created and usability testing performed?",
+    options: [
+      "Concept Development & Testing",
+      "Business Analysis",
+      "Product Development & Prototyping",
+      "Market Testing"
+    ],
+    a: 2,
+    e: "Product Development & Prototyping: A prototype is created, and usability testing is performed to refine the design."
+  },
+  {
+    q: "Which NPD stage involves launching a small-scale version of the product to gather customer feedback?",
+    options: [
+      "Business Analysis",
+      "Product Development & Prototyping",
+      "Market Testing",
+      "Commercialization"
+    ],
+    a: 2,
+    e: "Market Testing: A small-scale version of the product is launched to gather customer feedback."
+  },
+  {
+    q: "The full-scale launch of a product including production, marketing, and distribution is called:",
+    options: [
+      "Market Testing",
+      "Product Development",
+      "Business Analysis",
+      "Commercialization"
+    ],
+    a: 3,
+    e: "Commercialization: This is the full-scale launch of the product, including production, marketing, and distribution."
+  },
+  {
+    q: "Which is the final stage of the NPD process?",
+    options: [
+      "Market Testing",
+      "Commercialization",
+      "Continuous Improvement",
+      "Business Analysis"
+    ],
+    a: 2,
+    e: "Continuous Improvement: After the product is launched, collecting customer feedback is vital for ongoing refinement. This is the final ongoing stage."
+  },
+  {
+    q: "A company using a controlled launch in a limited market before full-scale introduction is conducting:",
+    options: [
+      "Market Penetration",
+      "Idea Screening",
+      "Test Marketing",
+      "Commercialization"
+    ],
+    a: 2,
+    e: "Test Marketing: A company uses a controlled launch in a limited market to evaluate product performance before full-scale introduction."
+  },
+  {
+    q: "Which of the following is NOT a source of idea generation for new products?",
+    options: [
+      "Customer feedback",
+      "Competitor analysis",
+      "Employee layoffs",
+      "Research and development (R&D)"
+    ],
+    a: 2,
+    e: "Employee Layoffs is NOT a source of idea generation. Sources include customer feedback, competitor analysis, brainstorming sessions, and R&D."
+  },
+  {
+    q: "Change management is best defined as:",
+    options: [
+      "Eliminating all changes in an organization",
+      "The structured approach to transitioning individuals, teams, and organizations from a current state to a desired future state",
+      "Changing company logos and branding",
+      "Managing employee salaries and benefits"
+    ],
+    a: 1,
+    e: "Change management is the structured approach to transitioning individuals, teams, and organizations from a current state to a desired future state. It is critical for successful innovation and adaptation."
+  },
+  {
+    q: "Which change model uses PESTEL analysis (Political, Economic, Social, Technological, Environmental, Legal)?",
+    options: [
+      "Kotter's 8-Step Model",
+      "Lewin's Change Model",
+      "ADKAR Model",
+      "Identifying the Need for Change step"
+    ],
+    a: 3,
+    e: "Identifying the Need for Change involves recognizing market shifts and using change models like PESTEL analysis (Political, Economic, Social, Technological, Environmental, Legal)."
+  },
+  {
+    q: "Lewin's Change Model involves which three steps?",
+    options: [
+      "Plan, Execute, Review",
+      "Identify, Implement, Evaluate",
+      "Unfreeze, Change, Refreeze",
+      "Define, Measure, Improve"
+    ],
+    a: 2,
+    e: "Lewin's Change Model involves three steps: Unfreeze-Change-Refreeze."
+  },
+  {
+    q: "According to Kotter's 8-Step Change Model, the first step in implementing change is to:",
+    options: [
+      "Develop a vision for change",
+      "Communicate the change vision",
+      "Establish a sense of urgency",
+      "Empower employees for broad-based action"
+    ],
+    a: 2,
+    e: "According to Kotter's 8-Step Change Model, the first step is to Establish a sense of urgency."
+  },
+  {
+    q: "Resistance to change in organizations can be caused by:",
+    options: [
+      "Fear of the unknown only",
+      "Lack of trust in leadership only",
+      "Poor communication only",
+      "All of the above"
+    ],
+    a: 3,
+    e: "Resistance to change in organizations can be caused by fear of the unknown, lack of trust in leadership, and poor communication — all of the above."
+  },
+  {
+    q: "In the ADKAR Model of Change, 'D' stands for:",
+    options: [
+      "Development",
+      "Desire",
+      "Decision",
+      "Direction"
+    ],
+    a: 1,
+    e: "In the ADKAR Model of Change, 'D' stands for Desire."
+  },
+  {
+    q: "Change agents in an organization are responsible for:",
+    options: [
+      "Preventing change from happening",
+      "Supporting and leading the change process",
+      "Resisting management decisions",
+      "Only informing employees without involvement"
+    ],
+    a: 1,
+    e: "Change agents in an organization are responsible for supporting and leading the change process."
+  },
+  {
+    q: "Creating a change strategy involves which of the following?",
+    options: [
+      "Ignoring stakeholder involvement",
+      "Defining clear objectives, KPIs, and stakeholder involvement, and developing a change vision",
+      "Implementing changes without planning",
+      "Avoiding communication with employees"
+    ],
+    a: 1,
+    e: "Creating a Change Strategy involves defining clear objectives, key performance indicators (KPIs), and stakeholder involvement, and developing a change vision."
+  },
+  {
+    q: "Which step in change management involves training programs, restructuring, and process updates?",
+    options: [
+      "Identifying the Need for Change",
+      "Creating a Change Strategy",
+      "Implementing the Change",
+      "Evaluating & Sustaining the Change"
+    ],
+    a: 2,
+    e: "Implementing the Change: Training programs, restructuring, and process updates are used along with change frameworks like Kotter's 8-Step Model or Lewin's Change Model."
+  },
+  {
+    q: "A strategy to overcome resistance to change includes:",
+    options: [
+      "Avoiding employee feedback",
+      "Implementing changes without informing employees",
+      "Communicating the benefits of change clearly",
+      "Forcing employees to accept change"
+    ],
+    a: 2,
+    e: "A strategy to overcome resistance to change includes communicating the benefits of change clearly."
+  },
 
-            // 96-120: Organizational Structures (Line, Line & Staff, Functional)
-            { q: "Which is the oldest, simplest, and most traditional form of organizational structure?", options: ["Line Organization", "Line and Staff Organization", "Functional Organization", "Matrix Organization"], a: 0, e: "Line organization (military style) is the oldest and simplest structure." },
-            { q: "In a 'Line Organization', how does authority flow?", options: ["Directly and vertically in an unbroken line from the top executive down to the lowest worker", "Horizontally between peers", "From workers up to the CEO", "Randomly"], a: 0, e: "It creates a strict, straight scalar chain of command." },
-            { q: "Which of the following is a major advantage of Line Organization?", options: ["Quick decision making and strict discipline due to clear unity of command", "High level of expert specialization", "Complex communication channels", "Shared accountability"], a: 0, e: "Because there is only one boss at each level, decisions are fast and discipline is absolute." },
-            { q: "What is a major limitation of a purely Line Organization?", options: ["Lack of specialization and overburdening of top executives", "It is too expensive to maintain", "Too many experts giving conflicting advice", "Decisions take too long"], a: 0, e: "A line manager must handle production, HR, and finance themselves, preventing specialization." },
-            { q: "Which organizational structure introduces 'Experts' to advise the line managers?", options: ["Line and Staff Organization", "Pure Line Organization", "Committee Organization", "Project Organization"], a: 0, e: "Staff officers provide expert advice, but Line officers actually make the decisions." },
-            { q: "In a Line and Staff Organization, what is the role of 'Staff' personnel?", options: ["To advise, assist, and support the line managers, without having the authority to command line workers", "To directly command the factory workers", "To fire line managers", "To ignore top management"], a: 0, e: "Staff are thinkers/advisors (e.g., Legal Advisor, HR expert). They advise; they do not command." },
-            { q: "In a Line and Staff Organization, who has the final authority to execute decisions?", options: ["The Line Managers", "The Staff Experts", "The Workers", "The Government"], a: 0, e: "The line manager can accept or reject the advice of the staff expert." },
-            { q: "What is a common source of conflict in a Line and Staff Organization?", options: ["Line managers feeling staff experts are too theoretical, and staff feeling line managers ignore their advice", "Line managers having too much free time", "Staff experts having too much command authority", "Workers not getting paid"], a: 0, e: "The friction between practical 'doers' (Line) and theoretical 'thinkers' (Staff) is a classic disadvantage." },
-            { q: "Who introduced the concept of the 'Functional Organization' structure?", options: ["F.W. Taylor", "Henry Fayol", "Max Weber", "Elton Mayo"], a: 0, e: "Taylor introduced it through his 'Functional Foremanship' concept to promote ultimate specialization." },
-            { q: "In a 'Functional Organization', the structure is divided based on:", options: ["Specialized business functions (e.g., Production, Marketing, Finance, HR)", "Geographical locations", "Specific products", "Random assignment"], a: 0, e: "Experts head each functional department and have direct authority over that specific function across the whole company." },
-            { q: "Which organizational structure completely violates the principle of 'Unity of Command'?", options: ["Functional Organization", "Line Organization", "Line and Staff Organization", "Divisional Organization"], a: 0, e: "In a pure functional structure, a worker receives orders from multiple functional specialists simultaneously." },
-            { q: "What is the primary advantage of a Functional Organization?", options: ["Maximum specialization and expert guidance at every step", "Strict unity of command", "Simple discipline", "Lack of conflict"], a: 0, e: "Because experts handle only their specific field, efficiency and specialization are maximized." },
-            { q: "A company that creates separate, self-contained units for different products (e.g., Cosmetics Division, Food Division) uses which structure?", options: ["Divisional Structure", "Functional Structure", "Line Structure", "Matrix Structure"], a: 0, e: "Divisional structures group everything needed for one product line into one autonomous division." },
-            { q: "Which organizational structure combines functional departments with specific project teams, resulting in employees having two bosses?", options: ["Matrix Organization", "Line Organization", "Divisional Organization", "Committee Organization"], a: 0, e: "In a Matrix, an engineer reports to the Engineering Head (Functional) and the Project Manager simultaneously." },
-            { q: "What is a major advantage of the Matrix Organization?", options: ["Highly efficient utilization of specialized resources across multiple projects simultaneously", "Simple chain of command", "No conflicts between bosses", "Cheap to implement"], a: 0, e: "Experts can be shifted between projects exactly when needed without sitting idle." },
-            { q: "What is a major disadvantage of the Matrix Organization?", options: ["Confusion and stress for employees reporting to two different bosses (Dual Subordination)", "Lack of specialization", "Inability to handle projects", "Too much centralization"], a: 0, e: "Dual reporting can lead to conflicting priorities and power struggles between managers." },
-            { q: "If a business is very small with only 10 employees and an owner, which structure is best?", options: ["Line Organization", "Matrix Organization", "Divisional Organization", "Line and Staff Organization"], a: 0, e: "Line organization is perfectly suited for small, simple businesses requiring fast decisions." },
-            { q: "Departmentation by 'Geography' or 'Territory' is best suited for:", options: ["Multinational companies operating in widely different regions with different local needs", "A single factory", "A small local bakery", "An online software company"], a: 0, e: "Regional divisions (e.g., North America Div, Asia Div) allow adaptation to local laws and cultures." },
-            { q: "Departmentation by 'Customer' is used when:", options: ["The organization serves distinct groups of clients (e.g., Wholesale Dept, Retail Dept, Government Dept)", "It produces only one product", "It operates in only one city", "It uses only one machine type"], a: 0, e: "This structure caters specifically to the unique needs of different buyer segments." },
-            { q: "What is a 'Project Organization' structure?", options: ["A temporary structure created to complete a specific, complex project and dissolved once the project ends", "A permanent functional structure", "A military command chain", "A government department"], a: 0, e: "Common in construction and aerospace, a team is assembled for the project and disbanded upon completion." },
+  // 2.3 Product Management
 
-            // 121-135: Delegation, Decentralization, and Span of Control
-            { q: "What does 'Delegation of Authority' mean?", options: ["The process of a manager assigning tasks and sharing a portion of their decision-making power with a subordinate", "Firing a subordinate", "A manager doing all the work themselves", "Taking orders from the CEO"], a: 0, e: "Delegation involves transferring authority downward so subordinates can act." },
-            { q: "What are the three elements of Delegation?", options: ["Assignment of Responsibility, Granting of Authority, and Creation of Accountability", "Planning, Organizing, Controlling", "Time, Money, Manpower", "Top, Middle, Lower levels"], a: 0, e: "To delegate, you assign the task, give the power to do it, and hold the person answerable." },
-            { q: "Why is Delegation important for a manager?", options: ["It relieves the manager of routine tasks, allowing them to focus on critical, strategic issues", "It allows the manager to blame workers for everything", "It reduces the manager's salary", "It is a legal requirement"], a: 0, e: "A manager cannot do everything. Delegation multiplies their capacity to get work done." },
-            { q: "Can a manager completely abdicate (escape) accountability by delegating tasks?", options: ["No, the delegating manager remains ultimately accountable to their own superior for the subordinate's performance", "Yes, entirely", "Yes, if they sign a contract", "Only in line organizations"], a: 0, e: "Delegation does not mean abdication. You cannot delegate your own ultimate accountability." },
-            { q: "Delegation is a process between:", options: ["Two individuals (a superior and an immediate subordinate)", "The whole company", "The company and the government", "Competitors"], a: 0, e: "Delegation is a 1-to-1 process down the scalar chain." },
-            { q: "What is 'Decentralization'?", options: ["The systematic and wide-scale dispersal of decision-making authority to the lowest possible levels across the entire organization", "A manager giving one task to a clerk", "Moving the headquarters to a rural area", "Concentrating all power with the CEO"], a: 0, e: "While delegation is 1-to-1, decentralization is a company-wide philosophy of pushing power downward." },
-            { q: "What is 'Centralization'?", options: ["The retention and concentration of all major decision-making power at the top level of management", "Dispersing power to workers", "Creating multiple branches", "Delegating all tasks"], a: 0, e: "In a centralized company, middle and lower managers have little to no autonomy." },
-            { q: "A completely decentralized organization would mean:", options: ["Top management has no control at all, which is practically impossible", "The company is very successful", "The company has no workers", "The company only produces one product"], a: 0, e: "Absolute decentralization results in anarchy. Organizations need a balance of both." },
-            { q: "Which size of organization typically requires more Decentralization?", options: ["Large, complex, multinational corporations", "Small, single-owner retail shops", "Startups with 5 employees", "A local restaurant"], a: 0, e: "A CEO of a global company cannot make every minor local decision; they must decentralize." },
-            { q: "What is 'Span of Control' (or Span of Management)?", options: ["The number of subordinates a single manager can effectively and efficiently supervise", "The physical size of the manager's office", "The amount of budget a manager controls", "The length of the company's lifespan"], a: 0, e: "It answers the question: 'How many people report directly to this manager?'" },
-            { q: "A manager has 30 workers reporting directly to him. This is an example of a:", options: ["Wide Span of Control", "Narrow Span of Control", "Zero Span of Control", "Vertical Span of Control"], a: 0, e: "A wide span means many subordinates report to one manager." },
-            { q: "A manager has only 3 highly specialized engineers reporting to her. This is an example of a:", options: ["Narrow Span of Control", "Wide Span of Control", "Flat Span of Control", "Broad Span of Control"], a: 0, e: "A narrow span means very few subordinates report to one manager." },
-            { q: "What type of organizational structure does a 'Narrow Span of Control' create?", options: ["A 'Tall' structure with many hierarchical levels of management", "A 'Flat' structure with very few management levels", "A purely horizontal structure", "A circular structure"], a: 0, e: "If each manager only oversees 3 people, a large company will need many layers of managers, creating a tall pyramid." },
-            { q: "What type of organizational structure does a 'Wide Span of Control' create?", options: ["A 'Flat' structure with fewer hierarchical levels", "A 'Tall' structure with many levels", "A rigid military structure", "A decentralized matrix"], a: 0, e: "If one manager oversees 50 people, fewer managers are needed, flattening the hierarchy." },
-            { q: "Which factor would allow a manager to have a WIDER span of control?", options: ["The subordinates are highly trained, skilled, and work independently", "The work is highly complex, dangerous, and constantly changing", "The manager lacks experience", "The subordinates are new and untrained"], a: 0, e: "Skilled workers doing routine jobs require less supervision, allowing the manager to oversee more of them." },
-
-            // 136-150: Deep Dive into Delegation, Structuring, and Departmentation
-            { q: "What is the consequence of 'Over-Centralization'?", options: ["Delayed decision-making and overburdened top executives", "Too much power in the hands of workers", "High employee motivation", "Faster local decisions"], a: 0, e: "If the CEO must approve every minor expense, the company will grind to a halt." },
-            { q: "Which of the following describes 'Departmentation by Process'?", options: ["Grouping activities based on the manufacturing stages (e.g., Spinning, Weaving, Dyeing departments in a textile mill)", "Grouping by customer type", "Grouping by region", "Grouping by product"], a: 0, e: "The departments reflect the physical flow of the production process." },
-            { q: "When a manager delegates authority, do they lose that authority?", options: ["No, authority can be revoked by the manager at any time", "Yes, they can never use it again", "Yes, it legally belongs to the worker forever", "Yes, the CEO takes it away"], a: 0, e: "Delegation is a temporary sharing of power, not a permanent surrender of it." },
-            { q: "What is the 'Exception Principle' in management control?", options: ["Managers should only be alerted to significant deviations from the plan, ignoring minor, routine variations", "Managers must micromanage every detail", "Rules apply to everyone except the manager", "The manager must do the work themselves"], a: 0, e: "Management by Exception saves executive time by filtering out normal operations." },
-            { q: "If an organization wants to quickly adapt to local market tastes in different countries, it should:", options: ["Decentralize decision-making authority to regional managers", "Centralize all decisions at the headquarters", "Use a pure Line organization globally", "Stop selling internationally"], a: 0, e: "Decentralization allows local experts to make fast decisions suited to their specific environment." },
-            { q: "In a hospital, having separate departments for Pediatrics, Orthopedics, and Cardiology is an example of departmentation by:", options: ["Service / Product line", "Geography", "Customer", "Time"], a: 0, e: "Each department offers a distinct 'product' or specialized medical service." },
-            { q: "Departmentation by 'Time' or 'Shift' is commonly seen in:", options: ["Factories and hospitals operating 24 hours a day (e.g., Day shift, Night shift)", "Small local grocery stores", "Headquarters of a bank", "Schools"], a: 0, e: "When operations must be continuous, organizing by shifts is necessary." },
-            { q: "What is 'Grapevine' communication?", options: ["Informal, unofficial communication that spreads rapidly through social interactions among employees", "An official memo from the CEO", "A formal written warning", "A scheduled department meeting"], a: 0, e: "The grapevine is the informal organization's communication network." },
-            { q: "Which principle states that an employee should not be subjected to conflicting orders from multiple managers?", options: ["Unity of Command", "Unity of Direction", "Span of Control", "Delegation"], a: 0, e: "Dual subordination leads to a breakdown in discipline and accountability." },
-            { q: "The process of evaluating alternatives and selecting the best one is called:", options: ["Decision Making", "Controlling", "Departmentation", "Staffing"], a: 0, e: "Decision making is the core intellectual action within the planning function." },
-            { q: "A 'Program' is a complex plan that usually involves:", options: ["A combination of objectives, policies, procedures, and rules", "Only a financial budget", "A single strict rule", "No clear objectives"], a: 0, e: "Programs are comprehensive plans for major undertakings." },
-            { q: "What is 'Authority' in the context of a Line and Staff organization?", options: ["Line has 'Command' authority, Staff has 'Advisory' authority", "Staff has 'Command' authority, Line has 'Advisory' authority", "Neither has any authority", "Both have identical command authority"], a: 0, e: "Line officers command the workforce; Staff officers advise the Line." },
-            { q: "Which structure is most vulnerable to the 'passing the buck' (shifting blame) problem?", options: ["Matrix Organization", "Pure Line Organization", "Sole Proprietorship", "Highly Centralized Organization"], a: 0, e: "Because of dual reporting in a Matrix, if a project fails, the functional manager and project manager often blame each other." },
-            { q: "A 'Committee Organization' is formed when:", options: ["A group of people are officially appointed to discuss, decide, or recommend solutions to specific problems jointly", "One dictator makes all decisions", "A company goes bankrupt", "Workers go on strike"], a: 0, e: "Committees pool diverse expertise to solve complex issues, though they can be slow." },
-            { q: "Effective delegation requires:", options: ["Trust in subordinates, clear communication, and parity of authority and responsibility", "Micromanaging the subordinate constantly", "Delegating responsibility without authority", "Keeping the task a secret"], a: 0, e: "Delegation fails if the manager doesn't trust the worker or fails to give them the necessary power." }
-        ];
+  {
+    q: "Product Management
 
         let currentIdx = 0, score = 0, answered = false;
 
